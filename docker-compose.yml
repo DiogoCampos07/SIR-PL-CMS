@@ -1,0 +1,31 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+      MYSQL_USER: diogo
+      MYSQL_PASSWORD: diogo
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+      - "./db:/docker-entrypoint-initdb.d"
+    ports:
+      - "3306:3306"
+    networks:
+      - php-docker
+  www:
+    depends_on:
+      - db
+    build:
+      dockerfile: dockerfile
+      context: .
+    volumes:
+      - "./src:/var/www/html"
+    ports:
+      - "80:80"
+    networks:
+      - php-docker
+networks:
+  php-docker:
+    driver: bridge

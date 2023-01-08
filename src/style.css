@@ -1,0 +1,144 @@
+* {
+    font-family: montserrat;
+}
+
+body{
+    margin-top: 61px;
+}
+
+#navbar {
+    transition: top 0.4s;
+    background-image: linear-gradient(to right, #88BAC1, #9BCAD2);
+
+}
+
+#info{
+    padding-top: 30px;
+    background-image: url('assets/bg.jpg');
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.section-padding {
+    padding: 75px 0;
+}
+
+.bg-blue {
+    background-color: #007d94;
+}
+
+.blue {
+    color: #007d94;
+}
+
+.bg-grey {
+    background-color: #b9d2da;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.nav-style {
+    border-radius: 25px;
+    text-align: center;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #007d94;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linguagens .card-body i {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.educacao .card-body i {
+    font-size: 20px;
+}
+
+.skills .card {
+    box-shadow: 10px 10px 20px rgba(0, 125, 148, 0.3);
+}
+
+.hobbies .card {
+    box-shadow: 10px 10px 20px rgba(0, 125, 148, 0.3);
+}
+
+.linguagens .card {
+    box-shadow: 10px 10px 20px rgba(0, 125, 148, 0.3);
+}
+
+.info .card {
+    box-shadow: 10px 10px 20px rgba(0, 125, 148, 0.3);
+}
+
+.iconSize {
+    font-size: 30px;
+}
+
+/* === responsive css === */
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .skills .card {
+        min-height: 375px;
+    }
+
+    .hobbies .card {
+        min-height: 355px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .skills .card {
+        min-height: 400px;
+    }
+
+    .hobbies .card {
+        min-height: 390px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .linguagens .card {
+        min-height: 350px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .linguagens .card {
+        min-height: 350px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .margins {
+        width: 90%;
+    }
+
+}
